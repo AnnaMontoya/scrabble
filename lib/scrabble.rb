@@ -1,7 +1,15 @@
 class Scrabble
 
+  attr_reader :word
+
+  def initialize(word)
+   @word = word
+  end
+
   def score(word)
-    1
+    letters = word.upcase.map
+    total_of_word = 0
+    total_of_word + point_values(letters)
   end
 
   def point_values
